@@ -1,13 +1,363 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&family=Source+Sans+Pro:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold">
-    Hello world!
-  </h1>
+
+<body class="bg-light">
+  <div class="container mx-auto">
+    <h1 class="text-high-emphasis leading-10 text-[2rem] pt-[3.25rem] pb-6">
+      Ma synthèse
+    </h1>
+
+    <div class="flex justify-between">
+      <section id="info" class="flex flex-col pr-0 xl:pr-[6.375rem] w-full">
+        <h2 class="text-high-emphasis text-2xl leading-8 pb-4">
+          Ma consommation
+        </h2>
+
+        <div id="info-balance" class="flex overflow-hidden border-b-2 border-border bg-white mb-6 rounded-lg shadow-lg">
+          <div class="flex flex-half items-center justify-between py-3 pl-5 pr-[1.264rem] border-r-2 border-border">
+            <div class="flex">
+              <img src="images/sim_card.svg" width="11.74px" height="14.67px">
+              <p class="text-sm leading-5 pl-[0.641rem]">Forfait mobile : </p>
+            </div>
+            <div class="flex">
+              <a href="#" class="text-sm text-primary-accent hover:text-primary underline font-bold pr-[0.539rem]">4,99
+                €
+                /
+                mois</a>
+              <img src="images/arrow_forward_ios.svg" width="7.25px" height="12.62px">
+            </div>
+          </div>
+          <div class="flex flex-half items-center justify-between pl-[1.208rem]">
+            <div class="flex">
+              <img src="images/restart_alt.svg" width="13.33px" height="14.84px">
+              <p class="text-sm leading-5 pl-[0.583rem]">Remise à zéro du forfait :</p>
+            </div>
+            <div class="flex">
+              <p class="text-sm font-bold pr-4 leading-5 text-high-emphasis">27 juillet (10 jours)</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="info-area" class="block xl:w-full md:flex">
+          <id id="info-area__data"
+            class="flex flex-col 2xl:w-full justify-between max-h-[16.438rem] bg-white pl-[1.625rem] pb-8 pr-6 pt-3 rounded-xl shadow-lg">
+
+            <div class="flex">
+              <img src="images/language.svg" width="16px" height="16px">
+              <span class="text-2xl leading-8 text-high-emphasis pl-[0.625rem]">Data web</span>
+            </div>
+
+            <div class="flex justify-between pt-5">
+              <div class="flex items-end">
+                <p class="text-[3.563rem] leading-[4rem] text-primary">4</p>
+                <p class="text-4xl leading-[2.75rem] text-primary pl-2">Go</p>
+              </div>
+              <div class="flex items-end">
+                <p class="text-base leading-6 font-medium text-medium-emphasis">/ 140 Go</p>
+              </div>
+            </div>
+
+
+            <div>
+              <div class="bg-light w-full h-3 rounded-lg mt-2 overflow-hidden">
+                <div class="bg-primary w-4/12 h-full shadow-md"></div>
+              </div>
+            </div>
+
+            <div class="flex items-center pt-[1.563rem]">
+              <img src="images/eco.svg" width="20" height="20">
+              <p class="font-medium text-high-emphasis leading-5 text-sm px-1">Empreinte carbone</p>
+              <img src="images/help.svg" width="20" height="20">
+              <br>
+            </div>
+
+            <div class="flex pt-[0.375rem]">
+              <p>Estimée à <strong>1000 gCO²</strong> depuis le 27 juin 2022, équivalente à <strong>12,8 km</strong> en
+                voiture.</p>
+            </div>
+          </id>
+
+          <div id="info-area__uses" class="flex flex-col w-full md:w-1/3 pl-2 pt-2 xl:pt-0 xl:pl-6 max-h-[16.438rem] ">
+            <div class="justify-between bg-white pl-4 pb-2 pr-6 pt-[0.688rem] rounded-xl shadow-lg">
+              <div class="flex">
+                <img src="images/call.svg" width="16px" height="16px">
+                <span class="text-2xl leading-8 text-high-emphasis pl-[0.375rem]">Appels</span>
+              </div>
+              <div class="flex flex-col pt-[0.375rem]">
+                <p class="font-normal text-[1.75rem] leading-9 text-primary">1 h 12 min 12 s</p>
+                <p class="font-medium text-base leading-6 text-medium-emphasis">/ illimité</p>
+              </div>
+            </div>
+
+            <div class="justify-between bg-white mt-[1.563rem] pl-4 pb-2 pr-6 pt-[0.688rem] rounded-xl shadow-lg">
+              <div class="flex">
+                <img src="images/chat_bubble.svg" width="16px" height="16px">
+                <span class="text-2xl leading-8 text-high-emphasis pl-[0.375rem]">SMS et MMS</span>
+              </div>
+              <div class="flex flex-col pt-[0.313rem]">
+                <p class="font-normal text-[1.75rem] leading-9 text-primary">40</p>
+                <p class="font-medium text-base leading-6 text-medium-emphasis">/ illimité</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="info-balance" class="flex mt-7">
+          <div class="flex">
+            <button type="button"
+              class="inline-flex items-center px-5 py-3 text-sm font-bold text-center leading-5 text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none shadow-lg">
+              Voir le détail de ma consommation
+              <svg width="16" height="12.62" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.783246 13.0496C0.605646 12.872 0.516846 12.6667 0.516846 12.4336C0.516846 12.2 0.605646 11.9944 0.783246 11.8168L5.60005 7.00001L0.766446 2.16641C0.600046 2.00001 0.516846 1.80001 0.516846 1.56641C0.516846 1.33335 0.605646 1.12801 0.783246 0.950412C0.950179 0.783479 1.15311 0.700012 1.39205 0.700012C1.63098 0.700012 1.83365 0.783479 2.00005 0.950412L7.55045 6.50001C7.62778 6.57788 7.68325 6.65841 7.71685 6.74161C7.74991 6.82481 7.76645 6.91095 7.76645 7.00001C7.76645 7.08908 7.74991 7.17521 7.71685 7.25841C7.68325 7.34161 7.62778 7.42215 7.55045 7.50001L1.98325 13.0664C1.80565 13.2445 1.60298 13.328 1.37525 13.3168C1.14751 13.3056 0.950179 13.2165 0.783246 13.0496Z"
+                  fill="#FFFFFF" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <div id="info-payment" class="flex flex-col pt-16">
+          <h2 class="text-high-emphasis text-2xl leading-8 pb-4">
+            Mes dernières factures
+          </h2>
+
+          <div class="flex">
+            <div class="w-1/2 pt-4 pl-[1.33rem] pb-4 pr-[1.229rem] mr-6 bg-white rounded-xl shadow-md">
+              <div class="flex justify-between">
+                <p class="text-base leading-6 font-medium">Facture du 24/07/2022</p>
+                <p class="text-sm leading-5 text-primary-accent font-bold">14,99 €</p>
+              </div>
+              <div class="flex flex-col">
+                <p class="pt-1">Forfait 10 Go - Sans engagement</p>
+                <div class="flex">
+                  <span class="bg-light inline-flex items-center mt-3 px-2.5 py-0.5 rounded-xl mr-2">
+                    <span class="font-bold text-xs leading-4 pr-[0.371rem]">IBAN</span>
+                    <img src="images/info.svg">
+                    <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.333328" width="1" height="12" rx="0.5" />
+                    </svg>
+
+                    <span class="pl-2 text-medium-emphasis text-xs font-medium">Prélevé le 29/06/2022</span>
+                  </span>
+                </div>
+                <div class="flex items-center gap-4 mt-2 ">
+                  <div class="relative before:z-10 before:absolute before:-right-3 before:top-1/2 before:w-max before:max-w-xs before:translate-x-full before:-translate-y-1/2 before:rounded-md before:border-3 before:border-secondary-light before:bg-secondary-lighter before:px-2 before:py-2 before:text-secondary before:underline before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:-right-[0.8rem] after:top-1/2 after:h-0 after:w-0 after:translate-x-0 after:-translate-y-1/2 after:border-8 after:border-r-secondary-light after:border-l-transparent after:border-b-transparent after:border-t-transparent after:invisible hover:before:visible hover:after:visible" data-tip="Comprendre ma facture">
+                    <button class="py-1 pt-4 text-sm leading-5 underline px-2 capitalize text-secondary ">
+                      Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2 pt-4 pl-[1.33rem] pb-4 pr-[1.229rem] mr-6 bg-white rounded-xl shadow-md">
+              <div class="flex justify-between">
+                <p class="text-base leading-6 font-medium text-medium-emphasis"><strong>Commande</strong> #384820</p>
+                <p class="text-sm leading-5 text-primary-accent font-bold">1 099,99 €</p>
+              </div>
+              <div class="flex flex-col">
+                <p class="pt-1">Apple iPhone SE 2020 - Carte SIM...</p>
+                <div class="flex">
+                  <span class="bg-success-lighter text-success-accent inline-flex items-center mt-3 px-2.5 py-0.5 rounded-xl mr-2">
+                    <img src="images/image9.svg">
+                    <span class="font-bold text-xs leading-4 pl-1 pr-[0.371rem]">CB</span>
+                    <img src="images/info.svg">
+                    <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.333328" width="1" height="12" rx="0.5" />
+                    </svg>
+
+                    <span class="pl-2 text-medium-emphasis text-xs font-medium">Prélevé le 29/06/2022</span>
+                  </span>
+                </div>
+                <div class="flex items-center gap-4 mt-2 ">
+                  <div class="relative before:z-10 before:absolute before:-right-3 before:top-1/2 before:w-max before:max-w-xs before:translate-x-full before:-translate-y-1/2 before:rounded-md before:border-3 before:border-secondary-light before:bg-secondary-lighter before:px-2 before:py-2 before:text-secondary before:underline before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:-right-[0.8rem] after:top-1/2 after:h-0 after:w-0 after:translate-x-0 after:-translate-y-1/2 after:border-8 after:border-r-secondary-light after:border-l-transparent after:border-b-transparent after:border-t-transparent after:invisible hover:before:visible hover:after:visible" data-tip="Comprendre ma facture">
+                    <button class="py-1 pt-4 text-sm leading-5 underline px-2 capitalize text-secondary ">
+                      Télécharger
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="info-balance" class="flex mt-7">
+          <div class="flex">
+            <button type="button"
+              class="inline-flex items-center px-5 py-3 text-sm font-bold text-center leading-5 text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none shadow-lg">
+              Voir toutes mes factures
+              <svg width="16" height="12.62" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.783246 13.0496C0.605646 12.872 0.516846 12.6667 0.516846 12.4336C0.516846 12.2 0.605646 11.9944 0.783246 11.8168L5.60005 7.00001L0.766446 2.16641C0.600046 2.00001 0.516846 1.80001 0.516846 1.56641C0.516846 1.33335 0.605646 1.12801 0.783246 0.950412C0.950179 0.783479 1.15311 0.700012 1.39205 0.700012C1.63098 0.700012 1.83365 0.783479 2.00005 0.950412L7.55045 6.50001C7.62778 6.57788 7.68325 6.65841 7.71685 6.74161C7.74991 6.82481 7.76645 6.91095 7.76645 7.00001C7.76645 7.08908 7.74991 7.17521 7.71685 7.25841C7.68325 7.34161 7.62778 7.42215 7.55045 7.50001L1.98325 13.0664C1.80565 13.2445 1.60298 13.328 1.37525 13.3168C1.14751 13.3056 0.950179 13.2165 0.783246 13.0496Z"
+                  fill="#FFFFFF" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+        
+
+      </section>
+
+      <section id="sidebar" class="flex-col hidden xl:flex border-l border-border pl-[1.375rem] max-w-xs">
+        <div id="notifications">
+          <div class="flex mb-4">
+            <img src="images/notifications.svg" width="16" height="16">
+            <p class="pl-1">Notifications</p>
+            <button type="button"
+              class="inline-flex relative ml-2 items-center text-sm font-medium text-center text-white bg-gradient-burgundy rounded-lg focus:ring-4">
+              <div
+                class="inline-flex absolute justify-center items-center w-6 h-6 text-sm font-bold text-white bg-gradient-to-r from-gradient-burgundy to-gradient-red rounded-full">
+                3</div>
+            </button>
+          </div>
+
+          <div class="flex flex-col max-h-[23.625rem] overflow-y-auto">
+            <div class="flex flex-col bg-white rounded-xl shadow-lg mb-4 mr-4">
+              <div class="flex justify-between items-center p-4">
+                <div class="flex">
+                  <img src="images/card_notification.svg" width="10" height="10">
+                  <p class="text-high-emphasis text-sm font-medium leading-5 pl-[0.375rem]">Nouvelle facture</p>
+                </div>
+                <div class="flex">
+                  <p class="text-medium-emphasis text-sm leading-5">Aujourd’hui</p>
+                </div>
+              </div>
+              <div class="flex flex-col pt-2 pb-4 pl-4">
+                <p class="text-sm leading-5 text-medium-emphasis">La facture de votre forfait pour le mois de juillet
+                  2022 est disponible.</p>
+              </div>
+
+              <div class="flex justify-between items-center p-4">
+                <div class="flex">
+                  <a href="#" class="text-secondary underline font-bold text-sm leading-5">Télécharger</a>
+                </div>
+                <div class="flex">
+                  <img src="images/check.svg" width="24" height="24" class="fill-secondary">
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col bg-white rounded-xl shadow-lg mb-4 mr-4">
+              <div class="flex justify-between items-center p-4">
+                <div class="flex">
+                  <img src="images/card_notification.svg" width="10" height="10">
+                  <p class="text-high-emphasis text-sm font-medium leading-5 pl-[0.375rem]">Nouvelle facture</p>
+                </div>
+                <div class="flex">
+                  <p class="text-medium-emphasis text-sm leading-5">Aujourd’hui</p>
+                </div>
+              </div>
+              <div class="flex flex-col pt-2 pb-4 pl-4">
+                <p class="text-sm leading-5 text-medium-emphasis">La facture de votre forfait pour le mois de juillet
+                  2022 est disponible.</p>
+              </div>
+
+              <div class="flex justify-between items-center p-4">
+                <div class="flex">
+                  <a href="#" class="text-secondary underline font-bold text-sm leading-5">Télécharger</a>
+                </div>
+                <div class="flex">
+                  <img src="images/check.svg" width="24" height="24" class="fill-secondary">
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-white rounded-xl shadow-lg mb-4 mr-4">
+              <div class="flex justify-between items-center p-4">
+                <div class="flex">
+                  <img src="images/card_notification.svg" width="10" height="10">
+                  <p class="text-high-emphasis text-sm font-medium leading-5 pl-[0.375rem]">Notification title</p>
+                </div>
+                <div class="flex">
+                  <p class="text-medium-emphasis text-sm leading-5">Il y a 2 jours</p>
+                </div>
+              </div>
+              <div class="flex flex-col pt-2 pb-4 pl-4">
+                <p class="text-sm leading-5 text-medium-emphasis">Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Distinctio assumenda placeat, vero aliquam mollitia officia, aliquid tempora </p>
+              </div>
+
+              <div class="flex justify-between items-center p-4">
+                <div class="flex">
+                  <a href="#" class="text-secondary underline font-bold text-sm leading-5">Télécharger</a>
+                </div>
+                <div class="flex">
+                  <img src="images/check.svg" width="24" height="24" class="fill-secondary">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex justify-end pr-7 pt-7 pb-8">
+            <a href="#" class="text-secondary underline font-bold text-sm leading-5">Voir toutes les notifications</a>
+          </div>
+        </div>
+
+        <div id="mon-mobile" class="border-t border-border pb-[2.625rem]">
+          <div id="mon-mobile__header" class="flex mb-4 pt-8">
+            <img src="images/phone_android.svg" width="16" height="16">
+            <p class="pl-1 text-base leading-6 text-high-emphasis">Mon mobile</p>
+          </div>
+
+          <div id="mon-mobile__body" class="flex flex-col">
+            <div class="flex flex-col bg-white rounded-xl shadow-lg mb-4 mr-4">
+              <div class="flex justify-between items-center p-4">
+                <div class="flex items-center pl-4 pt-4">
+                  <img src="images/picture.png">
+                  <p class="text-high-emphasis text-base font-normal leading-5 pl-4">Apple <br>
+                    iPhone SE 2020</p>
+                </div>
+              </div>
+              <div class="flex flex-col pt-2 pl-4 bg-warning-lighter rounded-xl m-4">
+                <p class="text-sm leading-5">Mobile perdu, volé ? Carte SIM non activée ou bloquée ? Vous remarquez un
+                  dysfonctionnement ? </p>
+                <a href="#"
+                  class="text-sm leading-5 underline text-warning-accent font-bold pt-[0.375rem] pb-[0.75rem]">Urgences
+                  et dépannages</a>
+              </div>
+              <div class="flex justify-between border-t border-border pt-4 pb-[1.188rem] px-4 items-center">
+                <a href="#" class="text-secondary text-sm font-bold">Mode d’emploi de mon mobile</a>
+                <img src="images/arrow.svg" width="7.25" height="12.62" alt="arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="links" class="border-t border-border pb-[2.625rem]">
+          <div class="flex mb-4 pt-8">
+            <img src="images/explore.svg" width="16" height="16">
+            <p class="pl-1 text-base leading-6 text-high-emphasis">Vous cherchez peut-être :</p>
+          </div>
+          <div class="flex justify-between pt-4 pb-4 items-center">
+            <a href="#" class="text-secondary text-sm font-bold">Aide et contact</a>
+            <img src="images/arrow.svg" width="7.25" height="12.62" alt="arrow icon">
+          </div>
+          <div class="flex justify-between pt-4 pb-4 items-center">
+            <a href="#" class="text-secondary text-sm font-bold">Mon offre en détail</a>
+            <img src="images/arrow.svg" width="7.25" height="12.62" alt="arrow icon">
+          </div>
+          <div class="flex justify-between pt-4 pb-4 items-center">
+            <a href="#" class="text-secondary text-sm font-bold">Mes paramètres</a>
+            <img src="images/arrow.svg" width="7.25" height="12.62" alt="arrow icon">
+          </div>
+        </div>
+      </section>
+
 </body>
+
 </html>
